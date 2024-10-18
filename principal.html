@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="img\Yellow_Modern_Gadget_Store_Logo-removebg-preview (3).png" alt="Logo" class="logo-img">
+    </div>
+        
+    <nav class="navegacion">
+    <a href="principal.html">Inicio</a>
+    <a href="somos.html">¿Quiénes Somos?</a>
+    <div class="dropdown">
+        <a href="#">Nuestros Productos</a>
+        <div class="dropdown-content">
+            <a href="promoc.html">Promociones</a>
+            <a href="catal.html">Catálogo</a>
+        </div>
+    </div>
+    <a href="contacto.html">Contacto</a>
+    <button class="btn">Iniciar Sesión</button>
+</nav>
+</header>
+<div class="background">
+    <video autoplay muted loop>
+         <source src="img\iPhone 15 Ultra _ Apple.mp4" type="video/mp4">
+       </video> 
+  </div>
+
+<div class="fondo">
+    <span class="icono-cerrar"><i class="bi bi-x-lg"></i></span>
+    <div class="contenedor-form login">
+        <h2>Iniciar Sesión</h2>
+        <form action="login.php" method="POST">
+            <div class="contenedor-input">
+                <span class="icono"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" name="email" required>
+                <label for="#">Email</label>
+            </div>
+            <div class="contenedor-input">
+                <span class="icono"><i class="bi bi-lock-fill"></i></span>
+                <input type="password" name="contraseña" required>
+                <label for="#">Contraseña</label>
+            </div>
+            <div class="recordar">
+                <label for="#"><input type="checkbox">Recordar Sesión</label>
+                <a href="#">¿Olvidé la Contraseña?</a>
+            </div>
+            <button type="submit" class="btn">Iniciar Sesión</button>
+            <div class="registrar">
+                <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
+            </div>
+        </div>
+    </form>
+    <div class="contenedor-form registrar">
+        <h2>Registrarse</h2>
+        <form action="registro.php" method="POST"> 
+            <div class="contenedor-input">
+                <span class="icono"><i class="bi bi-lock-fill"></i></span>
+                <input type="text" name="nombre_usuario" required>
+                <label for="#">Nombre de Usuario</label>
+            </div>
+        
+            <div class="contenedor-input">
+                <span class="icono"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" name="email" required>
+                <label for="#">Email</label>
+            </div>
+        
+            <div class="contenedor-input">
+                <span class="icono"><i class="bi bi-lock-fill"></i></span>
+                <input type="password" name="contraseña" required>
+                <label for="#">Contraseña</label>
+            </div>
+        
+            <div class="recordar">
+                <label for="#"><input type="checkbox">Acepto los términos y condiciones</label>
+            </div>
+        
+            <button type="submit" class="btn">Registrarme</button>
+        
+            <div class="registrar">
+                <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+
+<script src="scriptp.js"></script>
+
+</body>
+</html>
